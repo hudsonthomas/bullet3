@@ -78,8 +78,8 @@ struct	btSoftBodyHelpers
 		const btVector3& to,
 		int res,
 		int fixeds);
-	/* Create a patch														*/ 
-	static	btSoftBody*		CreatePatch(btSoftBodyWorldInfo& worldInfo,
+       /* Create a patch														*/
+  	static	btSoftBody*		CreatePatch(btSoftBodyWorldInfo& worldInfo,
 		const btVector3& corner00,
 		const btVector3& corner10,
 		const btVector3& corner01,
@@ -88,6 +88,9 @@ struct	btSoftBodyHelpers
 		int resy,
 		int fixeds,
 		bool gendiags);
+
+   
+
 	/* Create a patch with UV Texture Coordinates	*/ 
 	static	btSoftBody*		CreatePatchUV(btSoftBodyWorldInfo& worldInfo,
 		const btVector3& corner00,

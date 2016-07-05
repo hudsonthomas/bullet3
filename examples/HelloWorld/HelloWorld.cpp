@@ -20,7 +20,7 @@ subject to the following restrictions:
 /// This is a Hello World program for running a basic Bullet physics simulation
 
 int main(int argc, char** argv)
-{
+{/*
 	///-----includes_end-----
 
 	int i;
@@ -181,6 +181,6 @@ int main(int argc, char** argv)
 	delete collisionConfiguration;
 
 	//next line is optional: it will be cleared by the destructor when the array goes out of scope
-	collisionShapes.clear();
+	collisionShapes.clear();*/
 }
 

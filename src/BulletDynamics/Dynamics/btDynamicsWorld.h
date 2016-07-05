@@ -18,6 +18,7 @@ subject to the following restrictions:
 
 #include "BulletCollision/CollisionDispatch/btCollisionWorld.h"
 #include "BulletDynamics/ConstraintSolver/btContactSolverInfo.h"
+#include "BulletSoftBody/btSoftBody.h"
 
 class btTypedConstraint;
 class btActionInterface;
@@ -91,6 +92,10 @@ public:
 		virtual void	addRigidBody(btRigidBody* body, short group, short mask) = 0;
 
 		virtual void	removeRigidBody(btRigidBody* body) = 0;
+
+		//new from hudson
+		//virtual void    addSoftBody(btSoftBody* body) = 0;
+		//	virtual void    removeSoftBody(btSoftBody* body) = 0;
 
 		virtual void	setConstraintSolver(btConstraintSolver* solver) = 0;
 

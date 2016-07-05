@@ -61,7 +61,7 @@ struct	btSoftBodyWorldInfo
 		m_broadphase(0),
 		m_dispatcher(0),
 		m_gravity(0,-10,0)
-	{
+  {
 	}
 };	
 

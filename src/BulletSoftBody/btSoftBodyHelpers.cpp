@@ -698,6 +698,7 @@ btSoftBody*		btSoftBodyHelpers::CreateRope(	btSoftBodyWorldInfo& worldInfo, cons
 	return(psb);
 }
 
+
 //
 btSoftBody*		btSoftBodyHelpers::CreatePatch(btSoftBodyWorldInfo& worldInfo,const btVector3& corner00,
 											   const btVector3& corner10,
@@ -707,8 +708,12 @@ btSoftBody*		btSoftBodyHelpers::CreatePatch(btSoftBodyWorldInfo& worldInfo,const
 											   int resy,
 											   int fixeds,
 											   bool gendiags)
-{
+{        
+
 #define IDX(_x_,_y_)	((_y_)*rx+(_x_))
+        
+
+
 	/* Create nodes	*/ 
 	if((resx<2)||(resy<2)) return(0);
 	const int	rx=resx;
@@ -717,6 +722,7 @@ btSoftBody*		btSoftBodyHelpers::CreatePatch(btSoftBodyWorldInfo& worldInfo,const
 	btVector3*	x=new btVector3[tot];
 	btScalar*	m=new btScalar[tot];
 	int iy;
+        
 
 	for(iy=0;iy<ry;++iy)
 	{
@@ -854,6 +860,7 @@ btSoftBody*		btSoftBodyHelpers::CreatePatchUV(btSoftBodyWorldInfo& worldInfo,
 	*
 	*
 	*/
+        printf("SOFT HELPER JUST started running uv  patch^^^^^");
 
 #define IDX(_x_,_y_)	((_y_)*rx+(_x_))
 	/* Create nodes		*/ 
